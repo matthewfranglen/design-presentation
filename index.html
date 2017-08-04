@@ -20,6 +20,15 @@
             link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
             document.getElementsByTagName( 'head' )[0].appendChild( link );
         </script>
+
+        <style>
+            .text-blue {
+                color: white !important;
+            }
+            .text-border {
+                text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black !important;
+            }
+        </style>
     </head>
     <body>
         <div class="reveal">
@@ -28,7 +37,40 @@
                     <img src="images/magician.jpg" />
                     <p>As above so below</p>
                 </section>
-                <section>Slide 2</section>
+                <section>
+                    <p>Input ➜ Transform ➜ Output</p>
+                    <img src="images/symmetry.png" />
+                    <p>Everything looks like this</p>
+
+                    <aside class="notes">
+                        Statements work on variables and produce values or have side effects.
+                        Methods take arguments and return results or have side effects. Methods are compositions of statements.
+                        Classes are collections of methods and state. The methods can alter the state easily as a side effect.
+                        Applications can receive events and produce responses or have side effects. Applications are compositions of classes.
+                        Enterprise systems are compositions of applications.
+                    </aside>
+                </section>
+                <section data-background="images/lego-wall.jpg">
+                    <h1 class="text-blue text-border">It's how things fit together that matters</h1>
+
+                    <aside class="notes">
+                        Lego works because pieces fit together.
+                        The units that you work with must fit together.
+                        Define your interfaces.
+                    </aside>
+                </section>
+                <section data-background="images/border.jpg">
+                    <h1 class="text-blue text-border">Interfaces are Borders</h1>
+
+                    <aside class="notes">
+                        The means of passing the border may vary.
+                        Method Invocation.
+                        Message Passing.
+                        Files.
+                        Databases.
+                        Kafka.
+                    </aside>
+                </section>
             </div>
         </div>
 
