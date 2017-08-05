@@ -116,6 +116,37 @@
                         The SOLID principles heavily relate to coupling and cohesion.
                     </aside>
                 </section>
+                <section>
+                    Keeping things Separate
+                    <img src="images/coupling.jpg" />
+                    allows them to change independently
+
+                    <aside class="notes">
+                        Content coupling - reliance on internal workings.
+                        Common coupling - sharing global state.
+                        External coupling - communication with external devices has an externally imposed data format.
+                        Control coupling - one thing drives the state of another.
+                        Temporal coupling - grouping things because they occur at the same time.
+                        Stamp coupling - shared composite data structure. May not have overlap.
+                        Data coupling - parameters.
+                        Message coupling - communication only via message passing.
+
+                        Tight coupling between classes leads to changes in one class causing other classes to change.
+                        It also makes it harder to reason about the behaviour of individual classes.
+                    </aside>
+                </section>
+                <section>
+                    Does everything belong?
+                    <img src="images/cohesion.jpg" />
+
+                    <aside class="notes">
+                        Cohesive classes have functionality which is strongly related.
+                        This makes them more reliable, reusable and understandable.
+
+                        Classes that lack cohesion are difficult to maintain, test and understand.
+                        A utility class typically lacks cohesion.
+                    </aside>
+                </section>
             </div>
         </div>
 
@@ -127,6 +158,9 @@
             // - https://github.com/hakimel/reveal.js#configuration
             // - https://github.com/hakimel/reveal.js#dependencies
             Reveal.initialize({
+                controls: false,
+                progress: false,
+
                 dependencies: [
                     { src: 'plugin/markdown/marked.js' },
                     { src: 'plugin/markdown/markdown.js' },
